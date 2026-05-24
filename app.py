@@ -8,4 +8,4 @@ if not api_key:
     st.error("Missing Gemini API Key. Please configure it in your Streamlit dashboard settings.")
     st.stop()
 
-client = genai.Client(api_key=api_key)
+genai.configure (api_key=api_key)
